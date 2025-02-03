@@ -29,12 +29,13 @@ build the image from Docker
 ```bash
   cd simple_api
   docker build --no-cache -t smcappweb:v1 .
-```
-after that run 
+``` 
 
 ensure that the images and tag is like on the image: 
+
 ![screenshot](screenshots/1.png)
-then 
+
+then  after that run
 
 ```bash
   cd ..
@@ -49,10 +50,14 @@ Either way , the following services will be started:
   curl -u toto:python -X GET http://localhost:6000/pozos/api/v1.0/get_student_ages
 ```  
 
+![screenshot](screenshots/2.png)
+
 - the front end :
  ```bash
   http://5.182.33.47:8585
 ```  
+![screenshot](screenshots/3.png)
+
 Docker Registry
 
 From the applications's directory registry, to run private registry
@@ -61,6 +66,7 @@ From the applications's directory registry, to run private registry
   http://5.182.33.47:8585
 ``` 
 ```bash
+  cd registry
   docker-compose up -d
   docker compose logs
 ```
@@ -72,3 +78,5 @@ docker tag c2e8e10ce787 localhost:5000/studentslistapi:local
 
 docker push localhost:5500/studentslistapi:local
 ```
+
+![screenshot](screenshots/3.png)
