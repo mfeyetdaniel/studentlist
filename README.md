@@ -74,9 +74,10 @@ From the applications's directory registry, to run private registry
 example of push on private registry:
 
 ```bash
-docker tag c2e8e10ce787 localhost:5000/studentslistapi:local
+docker tag c2e8e10ce787 localhost:5500/studentslistapi:local
 
 docker push localhost:5500/studentslistapi:local
 ```
 
-![screenshot](screenshots/4.png)
+
+![screenshot](screenshots/3.png)
