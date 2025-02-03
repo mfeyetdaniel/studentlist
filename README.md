@@ -25,7 +25,19 @@ From the applications's directory
 
 To run tests, run the following command
 
+build the image from Docker
 ```bash
+  cd simple_api
+  docker build --no-cache -t smcappweb:v1 .
+```
+after that run 
+
+ensure that the images and tag is like on the image: 
+![screenshot](screenshots/1.png)
+then 
+
+```bash
+  cd ..
   docker-compose up -d
   docker compose logs
 ```
