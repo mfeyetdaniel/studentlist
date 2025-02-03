@@ -80,4 +80,4 @@ docker push localhost:5500/studentslistapi:local
 ```
 
 
-![screenshot](screenshots/3.png)
+![screenshot](screenshots/4.png)
